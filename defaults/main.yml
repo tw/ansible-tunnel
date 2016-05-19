@@ -1,0 +1,7 @@
+---
+
+
+tunnel_user: 'tunnel'
+tunnel_shell: '/bin/true'
+
+tunnel_authorized_keys: []
