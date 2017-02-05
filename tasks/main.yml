@@ -2,8 +2,8 @@
 
 
 - name: create tunnel user
-  user: name={{ tunnel_user }} shell={{ tunnel_shell }}
+  user: name="{{ tunnel_user }}" shell="{{ tunnel_shell }}"
 
 - name: add authorized_keys
-  authorized_key: user={{ tunnel_user }} key="{{ item }}"
-  with_items: tunnel_authorized_keys
+  authorized_key: user="{{ tunnel_user }}" key="{{ item }}"
+  with_items: "{{ tunnel_authorized_keys }}"
